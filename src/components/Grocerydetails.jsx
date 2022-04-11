@@ -12,6 +12,7 @@ console.log(data)
         <div className="container" style={{
             display:"grid",
             gridTemplateColumns:`repeat(4,1fr)`,
+            gridTemplateRows:"350px",
             gap:"20px",
             justifyContent:"space-between"
         }}>

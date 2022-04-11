@@ -25,7 +25,7 @@ const CartButton = () => {
    {/* count with - and  + button */
   // count<=0?setShow(false):setShow(true)
 }
-  {show?<button onClick={handleShow} >Add to Cart</button>:<div style={{display:"flex",justifyContent:'center',alignItems:"center"}}>
+  {show?<button onClick={handleShow} style={{width:'100%'}}>Add to Cart</button>:<div style={{display:"flex",justifyContent:'center',alignItems:"center"}}>
       <button onClick={()=>handlecount(-1)}style={{height:'20px'}}>-</button>
       <p className="count-item" style={{height:'10px',width:'20px'}}>{count}</p>
       <button  onClick={()=>handlecount(1)} style={{height:'20px'}}>+</button>
