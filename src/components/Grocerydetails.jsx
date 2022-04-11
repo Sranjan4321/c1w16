@@ -5,7 +5,7 @@ import {v4 as uuid} from "uuid"
 
 const GroceryDetails = ()=>{
 console.log(data)
-console.log(uuid())
+// console.log(uuid())
     return(
         <>
         <h1>Groceries</h1>
@@ -18,7 +18,7 @@ console.log(uuid())
             {/* map through the data and display the cards */}
             {data.map((elem)=>{
                 return (<>
-                <GroceryItem  elem={elem}/>
+                <GroceryItem key={uuid()} elem={elem}/>
                 </>)
             })}
         </div>
